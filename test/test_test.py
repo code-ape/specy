@@ -1,3 +1,3 @@
 
-from test_utils import pyspec
-from pyspec import test
+from test_utils import specy
+from specy import test
