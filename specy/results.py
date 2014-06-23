@@ -9,10 +9,12 @@ def print_results(head_block, time_elapsed):
     print("Ran {2} tests in {3:.4f}s\nPassed {0}%, failed {1}".format(percent_passed,  
                                                     tests_ran - tests_passed, tests_ran, seconds))
     print("\nproperties\n{0}".format("="*40))
+    print("\nTree\n")
     print_loop(tree)
+    print("\n")
 
 
-def print_loop(tree, level=0):
+def print_loop(tree, level=2):
     if tree["passed"] == False:
         c = red
     elif tree["passing_children"] == False:
